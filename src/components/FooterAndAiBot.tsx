@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Sparkles, Send, X } from "lucide-react";
+import { Sparkles, Send, X, ArrowUp } from "lucide-react";
 import { PROFILE, PROJECTS, EXPERIENCES, EDUCATION } from "@/data/portfolio";
 
 interface ChatMessage {
@@ -51,12 +51,12 @@ function generatePortfolioAnswer(query: string, mode: "pro" | "friendly"): strin
     return `Umair holds a ${EDUCATION.degree} from ${EDUCATION.institution} (${EDUCATION.period}).`;
   }
 
-  if (q.includes("git") || q.includes("gitlab") || q.includes("repo") || q.includes("code")) {
-    return `You can check out Umair's repositories and activity on GitLab here:\n• GitLab: ${PROFILE.gitlab}\n• LinkedIn: ${PROFILE.linkedin}`;
+  if (q.includes("git") || q.includes("gitlab") || q.includes("github") || q.includes("repo") || q.includes("code")) {
+    return `You can check out Umair's repositories and activity here:\n• GitLab: ${PROFILE.gitlab}\n• GitHub: ${PROFILE.github}\n• LinkedIn: ${PROFILE.linkedin}`;
   }
 
   if (q.includes("hire") || q.includes("contact") || q.includes("email") || q.includes("phone") || q.includes("reach") || q.includes("available")) {
-    return `Umair is open to Senior Mobile / Flutter roles, remote contracts, and global client builds!\n• Email: ${PROFILE.email}\n• Phone / WhatsApp: ${PROFILE.phone}\n• GitLab: ${PROFILE.gitlab}\n• LinkedIn: linkedin.com/in/umair-amjad-53410b149\n• Location: ${PROFILE.location} (Remote-ready)`;
+    return `Umair is open to Senior Mobile / Flutter roles, remote contracts, and global client builds! Jump to #contact to send an inquiry directly or reach him at:\n• Email: ${PROFILE.email}\n• Phone / WhatsApp: ${PROFILE.phone}\n• GitLab: ${PROFILE.gitlab}\n• GitHub: ${PROFILE.github}\n• LinkedIn: linkedin.com/in/umair-amjad-53410b149`;
   }
 
   return mode === "pro"
@@ -112,13 +112,17 @@ export function PortfolioFooter() {
               <div className="mb-1 pl-6">
                 <span className="text-sky-300">trackRecord:</span>{" "}
                 <span className="text-amber-200">
-                  &quot;12 Live Store Apps · 20,000+ Users · 99.4% Crash-Free&quot;
+                  &quot;24 Store &amp; Web Builds · 20,000+ Users · 99.4% Crash-Free&quot;
                 </span>
                 ,
               </div>
               <div className="mb-1 pl-6">
-                <span className="text-sky-300">gitlab:</span>{" "}
-                <span className="text-amber-200">&quot;gitlab.com/Umair_Amjad&quot;</span>,
+                <span className="text-sky-300">profiles:</span>{" "}
+                <span className="text-emerald-300">[</span>
+                <span className="text-amber-200">
+                  &quot;gitlab.com/Umair_Amjad&quot;, &quot;github.com/umair-janjua&quot;
+                </span>
+                <span className="text-emerald-300">]</span>,
               </div>
               <div className="pl-6">
                 <span className="text-sky-300">currentStatus:</span>{" "}
@@ -132,9 +136,18 @@ export function PortfolioFooter() {
             </div>
           </div>
 
-          <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-zinc-500">
-            Let&apos;s ship resilient mobile products
-          </p>
+          <div className="flex flex-col items-start gap-3 md:items-end">
+            <a
+              href="#introSec"
+              className="inline-flex items-center gap-1.5 rounded-full border border-zinc-800 bg-zinc-950/90 px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-zinc-300 transition hover:border-emerald-400/50 hover:text-emerald-200"
+            >
+              <ArrowUp className="h-3.5 w-3.5 text-emerald-300" />
+              <span>Back to Top</span>
+            </a>
+            <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-zinc-500">
+              Let&apos;s ship resilient mobile products
+            </p>
+          </div>
         </div>
 
         {/* Slash-Separated Links */}
@@ -146,6 +159,15 @@ export function PortfolioFooter() {
             className="transition hover:text-amber-200"
           >
             GITLAB
+          </a>
+          <span className="px-3 text-zinc-600">/</span>
+          <a
+            href={PROFILE.github}
+            target="_blank"
+            rel="noreferrer"
+            className="transition hover:text-amber-200"
+          >
+            GITHUB
           </a>
           <span className="px-3 text-zinc-600">/</span>
           <a

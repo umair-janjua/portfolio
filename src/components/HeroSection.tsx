@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Gitlab,
+  Github,
   Linkedin,
   Mail,
   Phone,
@@ -213,6 +214,15 @@ export function HeroSection() {
                 </ExpandingDotButton>
               </a>
 
+              <a href="#contact" className="inline-flex">
+                <ExpandingDotButton
+                  className="border-amber-400/45 bg-amber-400/10 text-amber-100 backdrop-blur-sm"
+                  dotColor="bg-amber-300"
+                >
+                  Let&apos;s Talk
+                </ExpandingDotButton>
+              </a>
+
               <div className="flex items-center gap-2 sm:ml-1">
                 <a
                   href={PROFILE.gitlab}
@@ -225,6 +235,16 @@ export function HeroSection() {
                   <Gitlab className="h-4 w-4" />
                 </a>
                 <a
+                  href={PROFILE.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  title="GitHub (@umair-janjua)"
+                  className="rounded-lg border border-emerald-500/25 bg-black/60 p-2.5 text-emerald-300 transition hover:border-emerald-300/65 hover:bg-emerald-500/10"
+                >
+                  <Github className="h-4 w-4" />
+                </a>
+                <a
                   href={PROFILE.linkedin}
                   target="_blank"
                   rel="noreferrer"
@@ -235,9 +255,9 @@ export function HeroSection() {
                   <Linkedin className="h-4 w-4" />
                 </a>
                 <a
-                  href={`mailto:${PROFILE.email}`}
-                  aria-label="Email Umair"
-                  title={PROFILE.email}
+                  href="#contact"
+                  aria-label="Contact Umair"
+                  title={`Contact (${PROFILE.email})`}
                   className="rounded-lg border border-emerald-500/25 bg-black/60 p-2.5 text-emerald-300 transition hover:border-emerald-300/65 hover:bg-emerald-500/10"
                 >
                   <Mail className="h-4 w-4" />

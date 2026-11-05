@@ -11,6 +11,7 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { MilestonesSection } from "@/components/MilestonesSection";
 import { TerminalAndNotesSection } from "@/components/TerminalAndNotesSection";
+import { ContactSection } from "@/components/ContactSection";
 import { PortfolioFooter, FloatingAiAssistant } from "@/components/FooterAndAiBot";
 
 export default function PortfolioPage() {
@@ -23,13 +24,14 @@ export default function PortfolioPage() {
 
       <main id="main">
         <HeroSection />
-        <TechStackSection />
+        <ProjectsSection />
         <ExperienceSection />
+        <TechStackSection />
         <ReleaseTelemetrySection />
         <ServicesSection />
-        <ProjectsSection />
         <MilestonesSection />
         <TerminalAndNotesSection />
+        <ContactSection />
       </main>
 
       <PortfolioFooter />

@@ -1,18 +1,19 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Gitlab, Linkedin, Mail, Phone, FileDown, Terminal } from "lucide-react";
+import { Gitlab, Github, Linkedin, Mail, Phone, FileDown, Terminal } from "lucide-react";
 import { PROFILE } from "@/data/portfolio";
 
 const NAV_ITEMS = [
   { label: "Home", href: "#introSec" },
-  { label: "Stack", href: "#features" },
+  { label: "Portfolio", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Stack", href: "#features" },
   { label: "Velocity", href: "#github-contribution" },
   { label: "Services", href: "#services" },
-  { label: "Apps", href: "#projects" },
   { label: "Milestones", href: "#achievements" },
   { label: "Terminal", href: "#terminal" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Navbar({ onOpenAi }: { onOpenAi: () => void }) {
@@ -179,6 +180,15 @@ export function Navbar({ onOpenAi }: { onOpenAi: () => void }) {
                 className="rounded-lg border border-emerald-500/25 bg-black/45 p-2.5 transition hover:border-emerald-300/55 hover:bg-emerald-500/10"
               >
                 <Gitlab className="h-4 w-4" />
+              </a>
+              <a
+                href={PROFILE.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                className="rounded-lg border border-emerald-500/25 bg-black/45 p-2.5 transition hover:border-emerald-300/55 hover:bg-emerald-500/10"
+              >
+                <Github className="h-4 w-4" />
               </a>
               <a
                 href={PROFILE.linkedin}

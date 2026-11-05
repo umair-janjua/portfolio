@@ -75,6 +75,8 @@ export const PROFILE = {
   shortLocation: "Pakistan / Remote",
   linkedin: "https://www.linkedin.com/in/umair-amjad-53410b149",
   gitlab: "https://gitlab.com/Umair_Amjad",
+  github: "https://github.com/umair-janjua",
+  timezone: "Asia/Karachi",
   portfolioDocUrl:
     "https://docs.google.com/document/d/1u0RVghqzTwqjbFJBzcDt-MasFbWRjkCxY7AyyUqGo64/edit?usp=sharing",
   resumeUrl: "/downloads/Umair_Amjad_CV.pdf",
@@ -297,7 +299,7 @@ export const PROJECTS: ProjectItem[] = [
     region: "Africa",
     featured: true,
     description:
-      "Flagship community money-pooling & micro-savings fintech serving 20,000+ users with multi-gateway payments and offline-first reliability.",
+      "Community money-pooling fintech for 20,000+ users with multi-gateway payments & PowerSync offline ledger.",
     longDescription:
       "Production fintech app enabling communities, associations, and families across Africa to create transparent savings pools, automate recurring contributions, and process multi-gateway mobile-money & card payouts at 99.4% crash-free reliability.",
     links: [
@@ -331,7 +333,7 @@ export const PROJECTS: ProjectItem[] = [
     region: "Philippines",
     featured: true,
     description:
-      "Official mobile e-commerce marketplace for Salveowell health & wellness brand in the Philippines with rewards, bundles, and live order tracking.",
+      "Cross-platform health & wellness marketplace in the Philippines with member tiers, bundles & live tracking.",
     longDescription:
       "End-to-end cross-platform shopping app powering product discovery, member-tier pricing, bundle promotions, localized payment checkout, and push notification order updates on both Google Play and Apple App Store.",
     links: [
@@ -364,7 +366,7 @@ export const PROJECTS: ProjectItem[] = [
     region: "Philippines / Global",
     featured: true,
     description:
-      "Companion distributor RBAC business portal and video course training platform empowering Salveowell's distributor network on iOS & Android.",
+      "4-app distributor RBAC business portal (Members) & video course EdTech platform (Academy) on iOS & Android.",
     longDescription:
       "Dual-app enterprise & EdTech suite: SWAPP Members delivers role-based commission dashboards, genealogy tracking, and rebate management, while SWAPP Academy streams structured onboarding courses and tracks learning milestones.",
     links: [
@@ -409,7 +411,7 @@ export const PROJECTS: ProjectItem[] = [
     region: "Pakistan",
     featured: true,
     description:
-      "Complete multi-app e-commerce & grocery ecosystem spanning Customer, Vendor Admin, Delivery Rider, Grocery Android apps, and 2 live Web portals.",
+      "6-build commerce ecosystem connecting Customer, Vendor, Grocery & Rider Android apps with 2 Web portals.",
     longDescription:
       "End-to-end multi-role commerce platform connecting shoppers, store vendors, and delivery riders in real time. Includes dedicated Android apps for marketplace shopping, grocery delivery, vendor store management, and rider dispatch—paired with live Flutter/Web customer and vendor portals.",
     links: [
@@ -466,7 +468,7 @@ export const PROJECTS: ProjectItem[] = [
     region: "United Kingdom / Global",
     featured: true,
     description:
-      "Three-role on-demand food ordering & delivery ecosystem across iOS and Android for diners, restaurant merchants, and delivery drivers.",
+      "On-demand UK food delivery suite across iOS & Android: LofuFood (Diner), LofuStore (Merchant) & LofuDriver.",
     longDescription:
       "Full-stack mobile food delivery platform featuring LofuFood (iOS & Android customer ordering app), LofuStore (restaurant order prep & menu management), and LofuDriver (live turn-by-turn courier dispatch and earnings).",
     links: [
@@ -509,8 +511,9 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: "Social E-Commerce & Group-Buying App",
     category: "E-Commerce",
     region: "Pakistan / US Store",
+    featured: true,
     description:
-      "Cross-platform social commerce and group-buying marketplace live on both Google Play and the Apple App Store.",
+      "Social commerce & group-buying marketplace with deal timers and deep-link invites on Play Store & App Store.",
     longDescription:
       "Interactive social shopping platform allowing buyers to unlock wholesale deals through group purchasing, share product pools, and track deliveries seamlessly across Android and iOS.",
     links: [
@@ -542,7 +545,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "E-Commerce",
     region: "Saudi Arabia",
     description:
-      "Bilingual RTL/LTR mobile shopping marketplace engineered for Saudi Arabia with localized payments and fast catalog search.",
+      "Bilingual Arabic RTL / English shopping marketplace built for Saudi Arabia with localized KSA checkout.",
     longDescription:
       "Production e-commerce app built for the Saudi market (boshna.sa), featuring full Arabic RTL & English localization, smooth category filtering, promotional campaigns, and regional payment & shipping integrations.",
     links: [
@@ -568,7 +571,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "Food & Delivery",
     region: "Caribbean & Canada",
     description:
-      "International iOS production releases: FattaFatt Home Deliveries (quick-commerce) and Sawaeboa (multi-vendor merchant marketplace).",
+      "International iOS App Store releases: FattaFatt quick-commerce delivery & Sawaeboa multi-vendor marketplace.",
     longDescription:
       "Two international App Store products built for global clients: FattaFatt Home Deliveries powers rapid home delivery & dispatch in Trinidad & Tobago, while Sawaeboa enables multi-vendor storefront shopping and merchant management in Canada.",
     links: [
@@ -600,7 +603,7 @@ export const PROJECTS: ProjectItem[] = [
     category: "Web & POS",
     region: "Commercial Web / POS",
     description:
-      "High-speed custom Point-of-Sale (POS), billing, and online ordering web applications engineered for retail and restaurant operations.",
+      "High-speed retail & restaurant Web POS systems for counter billing, inventory & live online ordering.",
     longDescription:
       "Custom browser-based POS and digital storefront systems built for high-volume retail and hospitality brands—streamlining counter billing, kitchen/order tickets, inventory tracking, and direct online customer orders.",
     links: [

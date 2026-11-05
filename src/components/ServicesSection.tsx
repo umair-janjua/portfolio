@@ -309,7 +309,7 @@ export function ServicesSection() {
                 </p>
 
                 <div className="mt-3 flex flex-wrap items-center gap-2">
-                  <a href={`mailto:${PROFILE.email}`} className="inline-block">
+                  <a href="#contact" className="inline-block">
                     <ExpandingDotButton
                       className="border-cyan-400/40 bg-cyan-400/10 text-cyan-100"
                       dotColor="bg-cyan-300"

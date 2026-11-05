@@ -120,8 +120,9 @@ export function TerminalAndNotesSection() {
           `Email    : ${PROFILE.email}`,
           `Phone    : ${PROFILE.phone}`,
           `GitLab   : ${PROFILE.gitlab}`,
+          `GitHub   : ${PROFILE.github}`,
           `LinkedIn : ${PROFILE.linkedin}`,
-          "Status   : Ready to ship production mobile apps with your team.",
+          "Tip      : Scroll down to #contact to use the instant inquiry dispatcher.",
         ];
         break;
       case "resume":

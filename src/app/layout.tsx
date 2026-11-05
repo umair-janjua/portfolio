@@ -23,6 +23,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://umairamjad.vercel.app"),
   title: "Umair Amjad | Senior Mobile Application Developer Portfolio",
   description: PROFILE.summary,
   keywords: [
@@ -62,7 +63,7 @@ export default function RootLayout({
       addressLocality: "Kamoke, Gujranwala",
       addressCountry: "PK",
     },
-    sameAs: [PROFILE.linkedin, PROFILE.gitlab],
+    sameAs: [PROFILE.linkedin, PROFILE.gitlab, PROFILE.github],
     description: PROFILE.summary,
   };
 
