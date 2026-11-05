@@ -407,6 +407,43 @@ export function TechIcon({
     );
   }
 
+  // Bluetooth BLE / Beacons
+  if (key.includes("bluetooth") || key.includes("ble") || key.includes("beacon")) {
+    return (
+      <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true">
+        <path
+          d="M7 7.5L16.5 16.5L12 21V3L16.5 7.5L7 16.5"
+          stroke="#38BDF8"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  // Mobile Game / 60fps Engine / Custom Animations
+  if (key.includes("game") || key.includes("60fps") || key.includes("animation")) {
+    return (
+      <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true">
+        <rect
+          x="3"
+          y="7"
+          width="18"
+          height="10"
+          rx="5"
+          fill="#A855F7"
+          fillOpacity="0.2"
+          stroke="#C084FC"
+          strokeWidth="1.6"
+        />
+        <path d="M8 10V14M6 12H10" stroke="#E9D5FF" strokeWidth="1.6" strokeLinecap="round" />
+        <circle cx="15.5" cy="11" r="1" fill="#34D399" />
+        <circle cx="17.5" cy="13" r="1" fill="#FBBF24" />
+      </svg>
+    );
+  }
+
   // Default AI / Code Spark
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true">

@@ -65,6 +65,10 @@ function getAppTileAccent(category: ProjectItem["category"]): string {
   switch (category) {
     case "Fintech":
       return "border-emerald-400/45 bg-gradient-to-br from-emerald-500/25 to-teal-500/5 text-emerald-200";
+    case "BLE & Proximity":
+      return "border-sky-400/45 bg-gradient-to-br from-sky-500/25 to-cyan-500/5 text-sky-200";
+    case "Mobile Game":
+      return "border-purple-400/45 bg-gradient-to-br from-purple-500/25 to-fuchsia-500/5 text-purple-200";
     case "Multi-App Suite":
       return "border-cyan-400/45 bg-gradient-to-br from-cyan-500/25 to-sky-500/5 text-cyan-200";
     case "Enterprise & EdTech":
@@ -182,7 +186,7 @@ export function ProjectsSection() {
                   { id: "all", label: `All (${counts.ecosystems})` },
                   { id: "android", label: `Play (${counts.android})` },
                   { id: "ios", label: `iOS (${counts.ios})` },
-                  { id: "links", label: `24 Links` },
+                  { id: "links", label: `${counts.totalLinks} Links` },
                 ] as const
               ).map((tab) => {
                 const active = activeTab === tab.id;
@@ -209,7 +213,7 @@ export function ProjectsSection() {
                 <input
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Filter 24 links..."
+                  placeholder={`Filter ${counts.totalLinks} links...`}
                   aria-label="Filter app links"
                   className="w-full rounded-xl border border-zinc-800 bg-zinc-950/90 py-1.5 pl-8 pr-3 font-mono text-xs text-zinc-200 outline-none transition focus:border-emerald-400/50 placeholder:text-zinc-600"
                 />

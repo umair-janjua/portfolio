@@ -38,9 +38,11 @@ export interface ProjectItem {
   category:
     | "Fintech"
     | "E-Commerce"
+    | "BLE & Proximity"
     | "Multi-App Suite"
     | "Food & Delivery"
     | "Enterprise & EdTech"
+    | "Mobile Game"
     | "Web & POS";
   region: string;
   description: string;
@@ -359,6 +361,33 @@ export const PROJECTS: ProjectItem[] = [
     tech: ["Flutter", "Dart", "Riverpod", "Firebase", "REST APIs", "FCM", "Clean Architecture"],
   },
   {
+    id: "buzzr-proximity",
+    title: "Buzzr — Proximity Marketing",
+    subtitle: "BLE Beacon & Mall Geofencing Deals Platform",
+    category: "BLE & Proximity",
+    region: "South Africa",
+    featured: true,
+    description:
+      "BLE store-beacon & mall geofencing app delivering real-time personalized in-store offers with GDPR/CCPA privacy controls.",
+    longDescription:
+      "Location-aware retail proximity marketing app (RetailBuddy South Africa) connecting with in-store Bluetooth Low Energy (BLE) beacons and mall geofences to trigger hyper-relevant, frequency-capped deals during shopping mall hours.",
+    links: [
+      {
+        label: "Google Play",
+        platform: "android",
+        url: "https://play.google.com/store/apps/details?id=com.buzzr.proximitymarketing&hl=en",
+        packageOrDomain: "com.buzzr.proximitymarketing",
+      },
+    ],
+    metrics: ["BLE Beacon Sync", "Mall Geofencing", "GDPR & CCPA Ready"],
+    features: [
+      "Low-power Bluetooth (BLE) beacon scanning paired with background geofence entry/exit detection",
+      "Smart notification throttling restricted to active mall hours and opted-in favorite brands",
+      "Privacy-first architecture with full user consent controls and GDPR/CCPA compliance",
+    ],
+    tech: ["Flutter", "Bluetooth BLE", "Google Maps", "Firebase", "Clean Architecture"],
+  },
+  {
     id: "swapp-ecosystem",
     title: "SWAPP Members & SWAPP Academy",
     subtitle: "Distributor RBAC Portal & EdTech Suite",
@@ -461,12 +490,39 @@ export const PROJECTS: ProjectItem[] = [
     tech: ["Flutter", "Dart", "Firebase", "Firestore", "WebSockets", "Google Maps SDK", "Flutter Web"],
   },
   {
+    id: "cubicles-game",
+    title: "Cubicles",
+    subtitle: "60fps Neon Block-Stacking Puzzle Game",
+    category: "Mobile Game",
+    region: "Global",
+    featured: true,
+    description:
+      "One-handed 60fps neon block puzzle game featuring Classic, Speed & Marathon modes, SRS wall-kicks & particle effects.",
+    longDescription:
+      "Sleek glass-and-neon mobile arcade puzzle game engineered for thumb-friendly one-handed play. Features three fast-paced modes (Classic, Speed +35%, Marathon), Super Rotation System (SRS) with wall kicks, Bag-7 fair randomizer, ghost & hold piece mechanics, haptic feedback, and 100% offline state persistence.",
+    links: [
+      {
+        label: "Google Play",
+        platform: "android",
+        url: "https://play.google.com/store/apps/details?id=com.omen.cubicles&hl=en",
+        packageOrDomain: "com.omen.cubicles",
+      },
+    ],
+    metrics: ["60fps Custom Engine", "3 Game Modes", "100% Offline Play"],
+    features: [
+      "Thumb-optimized gesture controls (swipe, soft-drop, hard-flick, tap-rotate) with Super Rotation System (SRS) wall kicks",
+      "Custom 60fps rendering with neon glass UI, particle line-clear explosions, haptics, and background audio",
+      "Instant pause/resume board serialization and local high-score persistence with zero network dependency",
+    ],
+    tech: ["Flutter", "60fps Game Loop", "Dart", "Local Persistence", "Custom Animations"],
+  },
+  {
     id: "lofu-delivery-suite",
     title: "Lofu Food Delivery Suite",
     subtitle: "LofuFood · LofuStore · LofuDriver (4 Store Builds)",
     category: "Food & Delivery",
     region: "United Kingdom / Global",
-    featured: true,
+    featured: false,
     description:
       "On-demand UK food delivery suite across iOS & Android: LofuFood (Diner), LofuStore (Merchant) & LofuDriver.",
     longDescription:
@@ -511,7 +567,7 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: "Social E-Commerce & Group-Buying App",
     category: "E-Commerce",
     region: "Pakistan / US Store",
-    featured: true,
+    featured: false,
     description:
       "Social commerce & group-buying marketplace with deal timers and deep-link invites on Play Store & App Store.",
     longDescription:

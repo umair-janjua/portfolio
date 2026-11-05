@@ -19,13 +19,13 @@ const SUGGESTED_PROMPTS = [
 function generatePortfolioAnswer(query: string, mode: "pro" | "friendly"): string {
   const q = query.toLowerCase();
 
-  if (q.includes("app") || q.includes("project") || q.includes("ohana") || q.includes("salveowell") || q.includes("swapp") || q.includes("gcart") || q.includes("lofu") || q.includes("boshna") || q.includes("gahhak") || q.includes("pos")) {
+  if (q.includes("app") || q.includes("project") || q.includes("ohana") || q.includes("salveowell") || q.includes("buzzr") || q.includes("cubicles") || q.includes("swapp") || q.includes("gcart") || q.includes("lofu") || q.includes("boshna") || q.includes("gahhak") || q.includes("pos")) {
     const list = PROJECTS.map(
       (p) => `• ${p.title} (${p.links.length} link${p.links.length > 1 ? "s" : ""} · ${p.region})`
     ).join("\n");
     return mode === "pro"
-      ? `Umair's portfolio spans 24 live Android, iOS, and Web/POS deployments across 9 product ecosystems:\n${list}\n\nUse the 'Ecosystems' or 'All Links' toggle in Production Work (#projects) to launch any Google Play, App Store, or Web POS build.`
-      : `Hey! Umair has shipped 24 Android, iOS, and Web/POS builds across 9 ecosystems:\n${list}\n\nCheck out #projects and toggle 'All Links' to open any Play Store, App Store, or Web POS link directly!`;
+      ? `Umair's portfolio spans 26 live Android, iOS, and Web/POS deployments across ${PROJECTS.length} product suites:\n${list}\n\nExplore #projects right below the hero to launch any Google Play, App Store, or Web POS build.`
+      : `Hey! Umair has shipped 26 Android, iOS, and Web/POS builds across ${PROJECTS.length} product suites:\n${list}\n\nCheck out #projects to open any Play Store, App Store, or Web POS link directly!`;
   }
 
   if (q.includes("offline") || q.includes("powersync") || q.includes("sync") || q.includes("architecture")) {
@@ -60,8 +60,8 @@ function generatePortfolioAnswer(query: string, mode: "pro" | "friendly"): strin
   }
 
   return mode === "pro"
-    ? `Umair Amjad is a Senior Mobile Application Developer with 4+ years of experience, 24 live store & web builds, 150,000+ users on Salveowell, 20,000+ fintech users on Ohana Africa, and 99.4% crash-free reliability. Ask me about his apps, offline-first PowerSync architecture, Fastlane CI/CD, or how to contact him!`
-    : `Awesome question! Umair is a Senior Mobile App Developer (Flutter, Kotlin, React Native) with 24 live builds serving 170K+ users (including 150K+ on Salveowell!). Try asking about his apps, offline-first PowerSync setup, or contact details!`;
+    ? `Umair Amjad is a Senior Mobile Application Developer with 4+ years of experience, 26 live store & web builds, 150,000+ users on Salveowell, 20,000+ fintech users on Ohana Africa, and 99.4% crash-free reliability. Ask me about his apps, offline-first PowerSync architecture, Fastlane CI/CD, or how to contact him!`
+    : `Awesome question! Umair is a Senior Mobile App Developer (Flutter, Kotlin, React Native) with 26 live builds serving 170K+ users (including 150K+ on Salveowell!). Try asking about his apps, offline-first PowerSync setup, or contact details!`;
 }
 
 export function PortfolioFooter() {
@@ -112,7 +112,7 @@ export function PortfolioFooter() {
               <div className="mb-1 pl-6">
                 <span className="text-sky-300">trackRecord:</span>{" "}
                 <span className="text-amber-200">
-                  &quot;24 Store &amp; Web Builds · 170K+ Users (Salveowell 150K+) · 99.4% Crash-Free&quot;
+                  &quot;26 Store &amp; Web Builds · 170K+ Users (Salveowell 150K+) · 99.4% Crash-Free&quot;
                 </span>
                 ,
               </div>

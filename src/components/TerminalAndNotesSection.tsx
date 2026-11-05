@@ -77,14 +77,14 @@ export function TerminalAndNotesSection() {
       case "apps":
       case "projects":
         response = [
-          "Live Portfolio Ecosystems (24 Android, iOS & Web/POS links):",
+          `Live Portfolio Suites (26 Android, iOS & Web/POS builds):`,
           ...PROJECTS.map(
             (p, idx) =>
-              `  [0${idx + 1}] ${p.title} (${p.links.length} build${
-                p.links.length > 1 ? "s" : ""
-              } · ${p.region})`
+              `  [${String(idx + 1).padStart(2, "0")}] ${p.title} (${
+                p.links.length
+              } build${p.links.length > 1 ? "s" : ""} · ${p.region})`
           ),
-          "Tip: Scroll to #projects and switch to 'All Links' to browse or copy every URL.",
+          "Tip: Scroll to #projects to inspect case studies or open any store link.",
         ];
         break;
       case "experience":
@@ -94,7 +94,7 @@ export function TerminalAndNotesSection() {
         break;
       case "metrics":
         response = [
-          "• 24 Store & Web Builds live across App Store, Google Play & Web",
+          "• 26 Store & Web Builds live across App Store, Google Play & Web",
           "• 150,000+ Active Users on Salveowell (iOS & Android)",
           "• 20,000+ Fintech Users on Ohana Africa @ 99.4% crash-free sessions",
           "• 15,000+ Monthly multi-gateway payment transactions",

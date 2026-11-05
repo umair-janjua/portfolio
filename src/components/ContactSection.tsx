@@ -470,7 +470,7 @@ export function ContactSection() {
                     Executive CV · PDF Dossier
                   </p>
                   <p className="mt-1 font-mono text-xs text-zinc-300">
-                    4+ Yrs · 24 Store &amp; Web Builds · Clean Architecture &amp; PowerSync
+                    4+ Yrs · 26 Store &amp; Web Builds · Clean Architecture &amp; PowerSync
                   </p>
                 </div>
 
