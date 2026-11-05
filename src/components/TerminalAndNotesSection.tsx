@@ -94,8 +94,9 @@ export function TerminalAndNotesSection() {
         break;
       case "metrics":
         response = [
-          "• 12 Production Apps live on App Store & Google Play",
-          "• 20,000+ Fintech Users @ 99.4% crash-free sessions",
+          "• 24 Store & Web Builds live across App Store, Google Play & Web",
+          "• 150,000+ Active Users on Salveowell (iOS & Android)",
+          "• 20,000+ Fintech Users on Ohana Africa @ 99.4% crash-free sessions",
           "• 15,000+ Monthly multi-gateway payment transactions",
           "• 2h → 15m Store deployments via Fastlane (30+ submissions)",
           "• 3.1s → 1.4s Cold start & -22% memory footprint",

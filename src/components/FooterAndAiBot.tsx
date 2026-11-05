@@ -60,8 +60,8 @@ function generatePortfolioAnswer(query: string, mode: "pro" | "friendly"): strin
   }
 
   return mode === "pro"
-    ? `Umair Amjad is a Senior Mobile Application Developer with 4+ years of experience, 12 live store apps, 20,000+ fintech users, and 99.4% crash-free reliability. Ask me about his apps (Ohana Africa, Salveowell, SWAPP), offline-first PowerSync architecture, Fastlane CI/CD, or how to contact him!`
-    : `Awesome question! Umair is a Senior Mobile App Developer (Flutter, Kotlin, React Native) with 12 live iOS & Android apps. Try asking about his fintech apps, offline-first PowerSync setup, performance wins, or contact details!`;
+    ? `Umair Amjad is a Senior Mobile Application Developer with 4+ years of experience, 24 live store & web builds, 150,000+ users on Salveowell, 20,000+ fintech users on Ohana Africa, and 99.4% crash-free reliability. Ask me about his apps, offline-first PowerSync architecture, Fastlane CI/CD, or how to contact him!`
+    : `Awesome question! Umair is a Senior Mobile App Developer (Flutter, Kotlin, React Native) with 24 live builds serving 170K+ users (including 150K+ on Salveowell!). Try asking about his apps, offline-first PowerSync setup, or contact details!`;
 }
 
 export function PortfolioFooter() {
@@ -112,7 +112,7 @@ export function PortfolioFooter() {
               <div className="mb-1 pl-6">
                 <span className="text-sky-300">trackRecord:</span>{" "}
                 <span className="text-amber-200">
-                  &quot;24 Store &amp; Web Builds · 20,000+ Users · 99.4% Crash-Free&quot;
+                  &quot;24 Store &amp; Web Builds · 170K+ Users (Salveowell 150K+) · 99.4% Crash-Free&quot;
                 </span>
                 ,
               </div>

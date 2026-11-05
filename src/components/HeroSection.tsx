@@ -69,7 +69,7 @@ const PHONE_SCREENS = [
     bars: [55, 64, 72, 80, 85, 92, 100],
     items: [
       { title: "GCart-Bazaar Suite", meta: "4 Play Apps + 2 Web", amount: "6 Live" },
-      { title: "Salveowell & SWAPP", meta: "Store + RBAC + EdTech", amount: "4 Live" },
+      { title: "Salveowell & SWAPP", meta: "150K+ Users · RBAC + EdTech", amount: "4 Live" },
       { title: "Lofu Food Delivery", meta: "iOS + Store + Driver", amount: "4 Live" },
       { title: "Boshna · Gahhak · POS", meta: "KSA · US · Cloud POS", amount: "8 Live" },
     ],
@@ -172,7 +172,7 @@ export function HeroSection() {
             <div className="mt-3.5 grid w-full grid-cols-2 gap-2.5 sm:grid-cols-4">
               {[
                 { kpi: "24 Live", label: "Play · iOS · Web" },
-                { kpi: "20,000+", label: "Fintech Users" },
+                { kpi: "170K+", label: "Users Served" },
                 { kpi: "99.4%", label: "Crash-Free Rate" },
                 { kpi: "15 min", label: "Fastlane Deploys" },
               ].map((stat) => (

@@ -39,7 +39,7 @@ function InteractiveGlobeCanvas() {
     const hubs = [
       { name: "Pakistan HQ (GCart / POS)", lat: 0.56, lon: 1.29, color: "#34d399" },
       { name: "Africa (Ohana 20k+)", lat: 0.11, lon: 0.06, color: "#22d3ee" },
-      { name: "Philippines (Salveowell)", lat: 0.25, lon: 2.11, color: "#38bdf8" },
+      { name: "Philippines (Salveowell 150k+)", lat: 0.25, lon: 2.11, color: "#38bdf8" },
       { name: "Saudi Arabia (Boshna)", lat: 0.43, lon: 0.81, color: "#fcd34d" },
       { name: "UK (LofuFood)", lat: 0.90, lon: -0.02, color: "#a7f3d0" },
       { name: "Canada & Americas", lat: 0.72, lon: -1.35, color: "#67e8f9" },

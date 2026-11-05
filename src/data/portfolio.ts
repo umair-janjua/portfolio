@@ -81,7 +81,7 @@ export const PROFILE = {
     "https://docs.google.com/document/d/1u0RVghqzTwqjbFJBzcDt-MasFbWRjkCxY7AyyUqGo64/edit?usp=sharing",
   resumeUrl: "/downloads/Umair_Amjad_CV.pdf",
   summary:
-    "Mobile Developer with 4+ years shipping production mobile & web apps across fintech, e-commerce, delivery ecosystems, and EdTech. Specialise in offline-first architecture, multi-gateway payment integration and Clean Architecture at team scale. 15+ mobile & web apps shipped across Google Play, App Store and Web—most recently a fintech product serving 20,000+ users at 99.4% crash-free sessions.",
+    "Mobile Developer with 4+ years shipping production mobile & web apps across fintech, e-commerce, delivery ecosystems, and EdTech. Specialise in offline-first architecture, multi-gateway payment integration and Clean Architecture at team scale. 20+ mobile & web builds shipped across Google Play, App Store and Web—including Salveowell (150,000+ users) and a fintech platform serving 20,000+ users at 99.4% crash-free sessions.",
   heroStats: [
     { label: "Location", value: "Pakistan / Remote" },
     { label: "Proof", value: "20+ Store & Web Builds" },
@@ -328,14 +328,14 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: "salveowell",
     title: "Salveowell",
-    subtitle: "Health & Wellness E-Commerce App",
+    subtitle: "Health & Wellness E-Commerce App (150K+ Users)",
     category: "E-Commerce",
     region: "Philippines",
     featured: true,
     description:
-      "Cross-platform health & wellness marketplace in the Philippines with member tiers, bundles & live tracking.",
+      "Cross-platform health & wellness marketplace serving 150K+ users in the Philippines with member tiers, bundles & live tracking.",
     longDescription:
-      "End-to-end cross-platform shopping app powering product discovery, member-tier pricing, bundle promotions, localized payment checkout, and push notification order updates on both Google Play and Apple App Store.",
+      "End-to-end cross-platform shopping app serving 150,000+ users in the Philippines—powering product discovery, member-tier pricing, bundle promotions, localized payment checkout, and push notification order updates on both Google Play and Apple App Store.",
     links: [
       {
         label: "Google Play",
@@ -350,7 +350,7 @@ export const PROJECTS: ProjectItem[] = [
         packageOrDomain: "id6445860307",
       },
     ],
-    metrics: ["iOS & Android Live", "Rewards & Checkout", "Real-Time Sync"],
+    metrics: ["150K+ Active Users", "iOS & Android Live", "Rewards & Checkout"],
     features: [
       "Multi-gateway Philippine payment integration, voucher wallets, and bundle pricing",
       "Real-time order tracking, FCM push alerts, and persistent cross-device cart sync",
@@ -647,10 +647,10 @@ export const ALL_APP_LINKS: (AppStoreLink & {
 export const MILESTONES = [
   {
     badge: "🚀 Scale & Reliability",
-    year: "2024 – Present",
-    title: "20,000+ Fintech Users @ 99.4% Crash-Free",
+    year: "2023 – Present",
+    title: "150K+ E-Commerce & 20K+ Fintech Users @ 99.4% Crash-Free",
     description:
-      "Architected and shipped production fintech & e-commerce apps processing 15,000+ monthly transactions with sub-second sync latency and 99.4%+ crash-free sessions.",
+      "Scaled Salveowell to 150,000+ users and Ohana Africa to 20,000+ fintech users—processing 15,000+ monthly transactions with sub-second sync and 99.4%+ crash-free sessions.",
   },
   {
     badge: "🌍 Multi-Market Portfolio",
@@ -696,9 +696,9 @@ export const IMPACT_METRICS = [
     detail: "Complete ecosystems shipped across Google Play, Apple App Store & Web POS.",
   },
   {
-    value: "20,000+",
-    label: "Active Fintech Users",
-    detail: "Serving real money-pooling communities at 99.4% crash-free sessions.",
+    value: "170K+",
+    label: "Total App Users",
+    detail: "150K+ users on Salveowell & 20K+ fintech users at 99.4% crash-free.",
   },
   {
     value: "15,000+",
